@@ -1,0 +1,29 @@
+<div class="comments">
+    <section class="comment">
+        <header class="card-header card-header-title has-background-grey-lighter">
+            <div class="column">
+                <p class="has-text-primary-light"></p>
+                Comments:
+            </div>
+            <div class="column">
+                <span class=""> </span>
+            </div>
+        </header>
+        <br>
+        {{#each this}}
+        <br>
+        <div class="text">
+            Comment: {{comment_body}}
+        </div>
+        <div class="meta">
+            From {{user.name}} on {{format_date created_at}}
+        </div>
+        <br>
+        {{/each}}
+    </section>
+</div>
+<footer>
+    <div class="column">
+        <span class=""> </span>
+    </div>
+</footer>

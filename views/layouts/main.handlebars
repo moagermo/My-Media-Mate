@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Media Mate</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+  <link rel="stylesheet" href="/Public/css/style.css">
+  <link href="/Public/assets/logo/m3.png" rel="shortcut icon" type="image/x-icon">
+</head>
+
+<body class='body'>
+  <div class='container'>
+    <header class="hero">
+      <div class="hero-body">
+        <img class='logo' src='/Public/assets/logo/m3.png'>
+        <br>
+        <p class="title">
+          My Media Mate
+        </p>
+        <p class="subtitle">Welcome to My Media Mate. A place to review and comment on your favorite TV shows and
+          movies. </p>
+      </div>
+  </div>
+  </header>
+  <nav class="navbar-menu" style="justify-content: center;">
+    {{#if loggedIn}}
+    <a class="navbar-item tag is-info is-large ml-2 mr-2" href="/">Homepage</a>
+    <a class="navbar-item tag is-info is-large ml-2 mr-2" href="/dashboard">My Dashboard</a>
+    <a class="navbar-item tag is-info is-large ml-2 mr-2" id="logout">Logout</a>
+    {{else}}
+    <a class="navbar-item tag is-info is-large ml-2 mr-2" href="/login">Login / Signup</a>
+    {{/if}}
+  </nav>
+  {{!-- test --}}
+  <main class="container container-fluid mt-5">
+    {{{ body }}}
+  </main>
+
+  </div>
+  <footer class="footer">
+    <p>Made by Kristen, Kyle, Keith and Mo</p>
+  </footer>
+  {{#if loggedIn}}
+  <script src="/Public/JS/logout.js"></script>
+  {{/if}}
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/Public/JS/movie-poster.js" </body>
+
+</html >

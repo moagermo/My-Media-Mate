@@ -1,0 +1,34 @@
+<div>
+    {{#if review}}
+    {{> reviews review}}
+    {{/if}}
+</div>
+
+<br>
+<br>
+<div>
+    <div class="card mb-6" style="width: 45%;">
+        {{> comments review.comments}}
+        {{#if loggedIn}}
+
+        <form class="comment-form">
+            <div class="card-content">
+                <div class="card-content">
+                    <textarea class=" pr-5 textarea is-info" placeholder="Type comment here"
+                        name="comment-body"></textarea>
+                </div>
+                <br>
+                <div>
+                    <button class="tag is-info is-medium is-light ml-5 mb-5" type="submit">Add Comment</button>
+                </div>
+            </div>
+
+        </form>
+        {{/if}}
+    </div>
+
+
+</div>
+{{#if loggedIn}}
+<script src="/Public/JS/comment.js"></script>
+{{/if}}

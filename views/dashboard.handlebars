@@ -1,0 +1,36 @@
+<section class="hero is-info">
+    <div class="hero-body">
+
+        <p class="title">
+            My Dashboard
+        </p>
+        <a class="tag is-info is-medium is-light" href="/dashboard/list/" id="create-wishlist">
+            View My "Want to Watch" List
+        </a>
+        <br>
+        <br>
+        <a class="tag is-info is-medium is-light" href="/dashboard/create/" id="create-review">
+            Create New Review
+        </a>
+    </div>
+</section>
+
+<br>
+<br>
+<p class="title" style="text-align: center;">
+    My Reviews:
+</p>
+
+{{#if reviews.length}}
+
+{{#each reviews as |review|}}
+{{> reviews review}}
+<a class="navbar-item tag is-info is-medium mb-6" style="margin-left:45% ;" href="/dashboard/edit/{{review.id}}">
+    Edit Review
+</a>
+{{/each}}
+
+{{else}}
+<div>You do not currently have any seen movies</div>
+
+{{/if}}

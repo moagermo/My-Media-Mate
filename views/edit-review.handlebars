@@ -1,0 +1,42 @@
+<div class="card mb-6" style="width: 50%;">
+    <header class="card-header card-header-title has-background-grey-lighter">
+        <div class="column">
+            <p class=" has-text-primary-light"></p>
+            <a href="/dashboard">Back to My Dashboard</a>
+            <br>
+            <br>
+            <h2 class="title">Edit Review</h2>
+        </div>
+        <div class="column">
+            <span class=""> </span>
+        </div>
+    </header>
+    <div class="card-content">
+        <form class="edit-review-form">
+            <div>
+                <label for="review-title">Title:</label>
+                <input class="input" name="review-title" type="text" value="{{review.title}}" />
+            </div>
+            <div>
+                <label for="review-body">My Review:</label>
+                <input class="input" name="review-body" type="text" value="{{review.review_body}}" />
+            </div>
+            <br>
+            <div>
+                Created by you on {{format_date review.created_at}}
+                <br>
+                <br>
+                <a href="/review/{{review.id}}">{{review.comments.length}} comments</a>
+            </div>
+            <br>
+            <button class="tag is-info is-medium is-light" type="submit">Save Changes</button>
+            <button class="tag is-info is-medium is-light delete-review-btn" type="click">Delete Review</button>
+        </form>
+    </div>
+</div>
+{{> comments review.comments}}
+</div>
+
+<script src="/Public/JS/edit-review.js"></script>
+<script src="/Public/JS/delete-review.js"></script>
+<script src="/Public/JS/comment.js"></script>

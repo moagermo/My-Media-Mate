@@ -1,0 +1,110 @@
+.display-flex {
+  text-align: center;
+}
+
+.body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+html {
+  background-color: transparent;
+}
+
+.logo {
+  width: 150px;
+  float: left;
+  margin-right: 2%;
+}
+
+.no-button {
+  margin-left: 500px;
+}
+
+.comment {
+  background-color: #cfe2ee;
+}
+
+.comment-form {
+  margin-bottom: 5%;
+}
+
+.comment .text {
+  padding-left: 5%;
+}
+
+.comment .meta {
+  font-size: 90%;
+  opacity: 0.8;
+  padding-left: 5%;
+}
+
+.card-content-s {
+  margin-top: -190px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 700px;
+}
+
+.card-content-l {
+  margin-top: -100px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 250px;
+}
+
+.footer {
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  background-color: transparent;
+  padding: 3rem 1.5rem 6rem;
+  color: black;
+}
+
+.title {
+  color: black;
+}
+
+.subtitle {
+  color: black;
+}
+
+.img {
+  width: 130px;
+  height: 130px;
+}
+
+.media {
+  background-color: white;
+  text-align: center;
+  padding: 2%;
+  box-sizing: content-box;
+}
+
+.media-content {
+  color: black;
+  font-size: large;
+}
+
+.media {
+  color: black;
+}
+
+.card-content-l {
+  margin: auto;
+  padding: 50px;
+}
+
+.card-content-s {
+  margin: auto;
+  padding: 50px;
+}
+
+.card {
+  width: fit-content;
+  margin: auto;
+}
